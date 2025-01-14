@@ -196,8 +196,6 @@
   
   <script type="text/javascript">
     // Client ID and API key from the Developer Console
-    // var CLIENT_ID = '69332637567-eobt5vc1ad7k85n7dm8g1i8hnehh9gqe.apps.googleusercontent.com';
-    // var API_KEY = 'AIzaSyCu7XtGmIHrrmKx-bczL8773fCsFSUPG0E';
     var CLIENT_ID = '1025558317155-5qfvbfnm1vf8o3f580p3k86da8j18pcr.apps.googleusercontent.com';
     var API_KEY = 'AIzaSyBbNf63w4lFxmfmPGuR6ywPcNTAKjgQk5c';
 
@@ -299,7 +297,7 @@
      */
     function listMajors() {
       gapi.client.sheets.spreadsheets.values.get({
-        spreadsheetId: '1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI', //'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
+        spreadsheetId: '1HbJLUlb373iwbIh-50t7I8HIlFSNvRK1K-dgCG0Qpjc', //'1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI', //'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
         range: 'Runs!A2:K',
       }).then(function (response) {
         var range = response.result;
