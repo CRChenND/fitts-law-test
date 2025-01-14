@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './index/home.component';
+import { HomeComponent } from './home/home.component';
 import { FittsTestComponent } from './fitts-test/fitts-test.component';
 import { DemoComponent } from './demo/demo.component';
 import { InfoComponent } from './info/info.component';
