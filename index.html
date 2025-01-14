@@ -196,10 +196,10 @@
   
   <script type="text/javascript">
     // Client ID and API key from the Developer Console
-    //var CLIENT_ID = '646935136786-ijbqhqni86o9pl8sliedogealik44a1r.apps.googleusercontent.com'  //'1025558317155-5qfvbfnm1vf8o3f580p3k86da8j18pcr.apps.googleusercontent.com';
-    //var API_KEY = 'AIzaSyCIj_pirNAKiTXVrMkkFjy_xSbXS_0eELo'; //'AIzaSyBbNf63w4lFxmfmPGuR6ywPcNTAKjgQk5c';
-    var CLIENT_ID = '646935136786-ijbqhqni86o9pl8sliedogealik44a1r.apps.googleusercontent.com'
-    var API_KEY = 'AIzaSyCIj_pirNAKiTXVrMkkFjy_xSbXS_0eELo';
+    // var CLIENT_ID = '69332637567-eobt5vc1ad7k85n7dm8g1i8hnehh9gqe.apps.googleusercontent.com';
+    // var API_KEY = 'AIzaSyCu7XtGmIHrrmKx-bczL8773fCsFSUPG0E';
+    var CLIENT_ID = '1025558317155-5qfvbfnm1vf8o3f580p3k86da8j18pcr.apps.googleusercontent.com';
+    var API_KEY = 'AIzaSyBbNf63w4lFxmfmPGuR6ywPcNTAKjgQk5c';
 
     // Array of API discovery doc URLs for APIs used by the quickstart
     var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
@@ -299,7 +299,7 @@
      */
     function listMajors() {
       gapi.client.sheets.spreadsheets.values.get({
-        spreadsheetId: '1HbJLUlb373iwbIh-50t7I8HIlFSNvRK1K-dgCG0Qpjc', //'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
+        spreadsheetId: '1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI', //'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
         range: 'Runs!A2:K',
       }).then(function (response) {
         var range = response.result;
@@ -315,9 +315,6 @@
   <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
     onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
-<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script>
-<script type="text/javascript" src="polyfills.d613b3f9519d6e1b1826.js"> 
-</script><script type="text/javascript" src="main.91529fc9b690dd7d5d60.js"></script>
+<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.d613b3f9519d6e1b1826.js"></script><script type="text/javascript" src="main.91529fc9b690dd7d5d60.js"></script></body>
 
-</body>
 </html>

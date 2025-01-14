@@ -25,9 +25,8 @@ export class AppService {
         return (pixeslValue * 2.54) / this.dpi;
     }
     appendRowsToGoogleSheets(data) {
-        console.log(data)
         gapi.client.sheets.spreadsheets.values.append({
-            spreadsheetId: '1HbJLUlb373iwbIh-50t7I8HIlFSNvRK1K-dgCG0Qpjc', //'1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI',//'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
+            spreadsheetId: '1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI',//'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
             range: 'Runs!A2:O',
             valueInputOption: 'USER_ENTERED',
             insertDataOption: 'INSERT_ROWS'
@@ -42,7 +41,7 @@ export class AppService {
     }
     appendRunAveragesRowsToGoogleSheets(data) {
         gapi.client.sheets.spreadsheets.values.append({
-            spreadsheetId: '1HbJLUlb373iwbIh-50t7I8HIlFSNvRK1K-dgCG0Qpjc', //'1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI', //'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
+            spreadsheetId: '1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI', //'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
             range: 'RunAverages!A2:AC',
             valueInputOption: 'USER_ENTERED',
             insertDataOption: 'INSERT_ROWS'
@@ -57,7 +56,7 @@ export class AppService {
     }
     appendUserAveragesRowsToGoogleSheets(data) {
         gapi.client.sheets.spreadsheets.values.append({
-            spreadsheetId: '1HbJLUlb373iwbIh-50t7I8HIlFSNvRK1K-dgCG0Qpjc', //'1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI',//'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
+            spreadsheetId: '1vdTH3JwYBJctWDPWnCYn1eNKfnrCzPOq3yoyShDA6hI',//'1LN7pXxtIvvF2QgRfmj1i5owC0ygRIi2kqJb1nirk1bA',
             range: 'UserAverages!A2:Z',
             valueInputOption: 'USER_ENTERED',
             insertDataOption: 'INSERT_ROWS'
